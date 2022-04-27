@@ -1,0 +1,12 @@
+$StorageAccountName = "storagename"
+$Blob1Name = "file1.txt"
+$TargetFolderPath = ($env:TEMP)
+
+//cannon-manufacturing.com - fcc6463d-c336-4223-9e7d-8d49d6b64661 - M365x46000064.onmicrosoft.com
+$context = New-AzureStorageContext -StorageAccountName $StorageAccountName -SASToken "?sv=2020-10-02&st=2022-04-27T14%3A39%3A10Z&se=2024-11-28T15%3A39%3A00Z&sr=c&sp=rl&sig=pfF%2BcSt3tdDbnhGcOYm%2FcExPo1NPGU7XKuHJX1Q1Ky8%3D"
+
+$result = Get-AzureStorageBlobContent `
+-Blob $Blob1Name `
+-Container $ContainerName `
+-Context $context `
+-Destination $TargetFolderPath
