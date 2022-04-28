@@ -1,4 +1,4 @@
-$StorageAccountName = "storagename"
+$StorageAccountName = "https://cannonmanufacturing.blob.core.windows.net/filestore"
 $Blob1Name = "file1.txt"
 $TargetFolderPath = ($env:TEMP)
 
