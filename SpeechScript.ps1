@@ -5,7 +5,7 @@ Add-Type -AssemblyName System.Speech
 [int]$number = Get-Random -Minimum 1 -Maximum 100
 
 $voice = New-Object System.Speech.Synthesis.SpeechSynthesizer
-$voice.Speak("Ahoy matey! I'm the Dreaded Pirate Robbins, and I have a secret!
+$voice.Speak("Ahoy matey! I'm the Dreaded Pirate Guybrush Threepwood, and I have a secret!
               It's a number between 1 and 100. I'll give you 7 tries to guess it.")
 
 do {
