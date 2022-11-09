@@ -1,1 +1,1 @@
-# special-octo-chainsaw for Archie Grady gradya@cannon-legal.com
+# special-octo-chainsaw for Archie Grady
